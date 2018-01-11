@@ -139,9 +139,8 @@
 
       [part~="cell"]:not([part~="details-cell"]) ::slotted(vaadin-grid-cell-content) {
         /* Fade out overflowing content */
-        --_valo-grid-cell-overflow-mask-image: linear-gradient(to left, transparent, #000 calc(var(--valo-space-m) + 0.5em));
-        -webkit-mask-image: var(--_valo-grid-cell-overflow-mask-image);
-        mask-image: var(--_valo-grid-cell-overflow-mask-image);
+        -webkit-mask-image: linear-gradient(to left, transparent, #000 calc(var(--valo-space-m) + 0.5em));
+        mask-image: linear-gradient(to left, transparent, #000 calc(var(--valo-space-m) + 0.5em));
         cursor: default;
         padding: var(--valo-space-s) var(--valo-space-m);
         box-sizing: border-box;
